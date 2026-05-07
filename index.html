@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Германия: Орёл и Решка</title>
+    <meta
+      name="description"
+      content="Интерактивный сайт для школьного выступления о Германии в двух режимах: люкс и эконом."
+    >
+    <link rel="preconnect" href="https://commons.wikimedia.org">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="ambient-glass" aria-hidden="true">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="place-backdrop" aria-hidden="true">
+      <span class="place-shot shot-berlin"></span>
+      <span class="place-shot shot-castle"></span>
+      <span class="place-shot shot-cologne"></span>
+      <span class="place-shot shot-hamburg"></span>
+    </div>
+    <header class="site-header" aria-label="Главная навигация">
+      <a class="brand" href="#top" aria-label="Германия: Орёл и Решка">
+        <span class="brand-mark"></span>
+        <span>Германия</span>
+      </a>
+      <nav>
+        <a href="#passport">Визитка</a>
+        <a href="#eagle">Орёл</a>
+        <a href="#tails">Решка</a>
+        <a href="#quiz">Вопросы</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-bg" role="img" aria-label="Бранденбургские ворота в Берлине"></div>
+        <div class="hero-overlay"></div>
+        <div class="coin-orbit" aria-hidden="true">
+          <span class="coin">€</span>
+        </div>
+        <div class="hero-content reveal">
+          <p class="eyebrow">Путешествие на 3-4 минуты</p>
+          <h1 id="hero-title">Германия: увидеть страну в роскоши и без лишних трат</h1>
+          <p>
+            Два гида, два маршрута, один Берлин: пятизвездочный ужин у Бранденбургских ворот
+            или бесплатная крыша Рейхстага, карривурст и метро.
+          </p>
+          <div class="hero-actions" aria-label="Быстрый переход">
+            <a class="button primary" href="#eagle">Режим Орёл</a>
+            <a class="button secondary" href="#tails">Режим Решка</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="passport section-band" id="passport" aria-labelledby="passport-title">
+        <div class="section-head reveal">
+          <p class="eyebrow">Визитная карточка</p>
+          <h2 id="passport-title">Коротко о стране</h2>
+        </div>
+        <div class="stats-grid">
+          <article class="stat-card reveal">
+            <span>Столица</span>
+            <strong>Берлин</strong>
+          </article>
+          <article class="stat-card reveal">
+            <span>Язык</span>
+            <strong>Немецкий</strong>
+          </article>
+          <article class="stat-card reveal">
+            <span>Валюта</span>
+            <strong>Евро</strong>
+          </article>
+          <article class="stat-card reveal">
+            <span>Соседи</span>
+            <strong><span data-count="9">0</span> Стран</strong>
+          </article>
+        </div>
+        <p class="fact-line reveal">
+          Интересное число: Германия граничит с девятью странами, это один из самых больших
+          показателей в Европе.
+        </p>
+        <div class="photo-ribbon reveal" aria-label="Фотографии Германии">
+          <figure>
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Neuschwanstein%20Castle%2C%20Germany.jpg?width=900" alt="Замок Нойшванштайн">
+            <figcaption>Нойшванштайн: сказочный замок в Баварии.</figcaption>
+          </figure>
+          <figure>
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/COLOGNE%20CATHEDRAL%20.jpg?width=900" alt="Кёльнский собор">
+            <figcaption>Кёльнский собор: символ города и готики.</figcaption>
+          </figure>
+          <figure>
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Speicherstadt%20-%20Hamburg.jpg?width=900" alt="Шпайхерштадт в Гамбурге">
+            <figcaption>Гамбург: район складов Шпайхерштадт.</figcaption>
+          </figure>
+          <figure>
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Museum%20Island%20-%20Berlin.jpg?width=900" alt="Музейный остров в Берлине">
+            <figcaption>Берлин: Музейный остров на реке Шпрее.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="split-intro section-band warm" aria-label="Выбор режима">
+        <div class="mode-card reveal">
+          <span class="mode-token eagle-token">Орёл</span>
+          <h2>Когда турист не экономит</h2>
+          <p>Легендарный отель, высокая кухня, музейный день и витрины люксовых брендов.</p>
+        </div>
+        <button class="flip-control" type="button" aria-label="Перевернуть монету">
+          <span class="flip-coin">€</span>
+        </button>
+        <div class="mode-card reveal">
+          <span class="mode-token tails-token">Решка</span>
+          <h2>Когда бюджет важнее</h2>
+          <p>Бесплатные виды, уличная еда, общественный транспорт и городские активности.</p>
+        </div>
+      </section>
+
+      <section class="route section-band" id="eagle" aria-labelledby="eagle-title">
+        <div class="section-head reveal">
+          <p class="eyebrow">Режим Орёл</p>
+          <h2 id="eagle-title">Берлин без экономии</h2>
+        </div>
+        <div class="route-grid">
+          <article class="travel-card reveal">
+            <img
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Hotel%20Adlon%20Kempinski-Berlin.jpg?width=1000"
+              alt="Hotel Adlon Kempinski Berlin"
+            >
+            <button class="info-hotspot" type="button" aria-label="Краткая информация об отеле">i</button>
+            <div class="image-info" role="note">
+              Легендарный пятизвездочный отель у Бранденбургских ворот. Здесь удобно показать режим «Орёл»: дорого, красиво, в самом центре Берлина.
+            </div>
+            <div>
+              <span class="price">От 407 евро за ночь</span>
+              <h3>Hotel Adlon Kempinski</h3>
+              <p>Люкс у Бранденбургских ворот.</p>
+            </div>
+          </article>
+          <article class="travel-card reveal">
+            <img
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Museum%20Island%20-%20Berlin.jpg?width=1000"
+              alt="Музейный остров в Берлине"
+            >
+            <button class="info-hotspot" type="button" aria-label="Краткая информация о Музейном острове">i</button>
+            <div class="image-info" role="note">
+              Музейный остров входит в список ЮНЕСКО. На одной территории собраны главные музеи Берлина.
+            </div>
+            <div>
+              <span class="price">24 евро</span>
+              <h3>Музейный остров</h3>
+              <p>Пять музеев и архитектура ЮНЕСКО.</p>
+            </div>
+          </article>
+          <article class="travel-card reveal">
+            <img
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Kaufhaus%20des%20Westens%200684.jpg?width=1000"
+              alt="KaDeWe в Берлине"
+            >
+            <button class="info-hotspot" type="button" aria-label="Краткая информация о KaDeWe">i</button>
+            <div class="image-info" role="note">
+              KaDeWe - один из самых известных универмагов Европы: люксовые бренды, витрины и знаменитый гастроэтаж.
+            </div>
+            <div>
+              <span class="price">Вход 0 евро</span>
+              <h3>KaDeWe</h3>
+              <p>Люксовые витрины, бренды и гастроэтаж.</p>
+            </div>
+          </article>
+        </div>
+        <aside class="glass-strip reveal">
+          <div>
+            <span>Ужин с местной подачей</span>
+            <strong>Lorenz Adlon Esszimmer</strong>
+          </div>
+          <div class="strip-prices">
+            <span>5 курсов: 275 евро</span>
+            <span>С вином: 430 евро</span>
+          </div>
+        </aside>
+      </section>
+
+      <section class="route section-band cool" id="tails" aria-labelledby="tails-title">
+        <div class="section-head reveal">
+          <p class="eyebrow">Режим Решка</p>
+          <h2 id="tails-title">Берлин дешево, но ярко</h2>
+        </div>
+        <div class="route-grid">
+          <article class="travel-card reveal">
+            <img
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Reichstag%20dome%2C%20Berlin%2C%20Germany.jpg?width=1000"
+              alt="Купол Рейхстага"
+            >
+            <button class="info-hotspot" type="button" aria-label="Краткая информация о куполе Рейхстага">i</button>
+            <div class="image-info" role="note">
+              Стеклянный купол Рейхстага - бесплатная смотровая точка. Нужна регистрация заранее.
+            </div>
+            <div>
+              <span class="price">0 евро</span>
+              <h3>Купол Рейхстага</h3>
+              <p>Бесплатная панорама по регистрации.</p>
+            </div>
+          </article>
+          <article class="travel-card reveal">
+            <img
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/CurryWurst.jpg?width=1000"
+              alt="Берлинская карривурст"
+            >
+            <button class="info-hotspot" type="button" aria-label="Краткая информация о карривурст">i</button>
+            <div class="image-info" role="note">
+              Карривурст - берлинская уличная еда: колбаска, соус карри и быстрый перекус за несколько евро.
+            </div>
+            <div>
+              <span class="price">4 евро</span>
+              <h3>Curry 36</h3>
+              <p>Берлинский вкус без удара по бюджету.</p>
+            </div>
+          </article>
+          <article class="travel-card reveal">
+            <img
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Mauerpark%20Karaoke%20Berlin.jpg?width=1000"
+              alt="Караоке в Мауэрпарке"
+            >
+            <button class="info-hotspot" type="button" aria-label="Краткая информация о Мауэрпарке">i</button>
+            <div class="image-info" role="note">
+              Мауэрпарк известен воскресным караоке, блошиным рынком и атмосферой свободного Берлина.
+            </div>
+            <div>
+              <span class="price">0 евро</span>
+              <h3>Мауэрпарк</h3>
+              <p>Музыка, рынок и караоке под небом.</p>
+            </div>
+          </article>
+        </div>
+        <aside class="glass-strip reveal">
+          <div>
+            <span>Передвижение</span>
+            <strong>24 часа на транспорте</strong>
+          </div>
+          <div class="strip-prices">
+            <span>Berlin AB: 11,20 евро</span>
+            <span>Короткая поездка: 2,80 евро</span>
+          </div>
+        </aside>
+      </section>
+
+      <section class="surprise section-band" aria-labelledby="surprise-title">
+        <div class="surprise-copy reveal">
+          <p class="eyebrow">Изюминка выпуска</p>
+          <h2 id="surprise-title">На автобане есть участки без лимита скорости</h2>
+          <p>
+            Автобан - это скоростная автомагистраль. На некоторых участках за городом нет общего
+            лимита скорости, если нет знака ограничения. Но есть рекомендуемая скорость 130 км/ч
+            и строгие штрафы за опасную езду.
+          </p>
+        </div>
+        <div class="calendar-card reveal" aria-label="Закон об автобанах">
+          <span>Autobahn</span>
+          <strong>∞</strong>
+          <small>Нет общего лимита не значит, что можно ехать как угодно.</small>
+        </div>
+      </section>
+
+      <section class="contrast section-band" aria-labelledby="contrast-title">
+        <div class="section-head reveal">
+          <p class="eyebrow">Фотоколлаж</p>
+          <h2 id="contrast-title">Контраст страны</h2>
+        </div>
+        <div class="collage reveal">
+          <figure>
+            <img
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/2023%20Hotel%20Adlon%20Kempinski%20Berlin.jpg?width=1200"
+              alt="Люксовый отель Adlon"
+            >
+            <figcaption>Дорого: отель Adlon и ужин высокой кухни.</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Berlin%20U-Bahn%20Train%20%2815312179506%29.jpg?width=1000"
+              alt="Поезд метро в Берлине"
+            >
+            <figcaption>Дешево: метро, карривурст и бесплатные виды.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="quiz section-band cool" id="quiz" aria-labelledby="quiz-title">
+        <div class="section-head reveal">
+          <p class="eyebrow">Для класса</p>
+          <h2 id="quiz-title">5 вопросов после выступления</h2>
+        </div>
+        <ol class="quiz-list reveal">
+          <li>Какая столица Германии?</li>
+          <li>Сколько стран граничит с Германией?</li>
+          <li>Как называется знаменитый берлинский уличный фастфуд с соусом карри?</li>
+          <li>Сколько стоит 24-часовой билет Berlin AB?</li>
+          <li>Что необычного есть на некоторых участках немецкого автобана?</li>
+        </ol>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <strong>Делали Шевяков Никита и Ивахнов Мирон</strong>
+        <p>География: Германия в режиме «Орёл» и «Решка».</p>
+      </div>
+      <details>
+        <summary>Источники цен и фото</summary>
+        <ul>
+          <li><a href="https://buchen.visitberlin.de/VisitBerlin/ukv/house/BTM00020100001934933?lang=en">visitBerlin: Hotel Adlon prices</a></li>
+          <li><a href="https://en.lorenzadlon-esszimmer.de/men%C3%BC">Lorenz Adlon Esszimmer menu</a></li>
+          <li><a href="https://www.smb.museum/en/museums-institutions/neues-museum/plan-your-visit/prices-tickets/">Staatliche Museen zu Berlin: Museum Island ticket</a></li>
+          <li><a href="https://www.bundestag.de/en/visittheBundestag/dome/registration-245686">Bundestag: Reichstag dome admission</a></li>
+          <li><a href="https://www.curry-36-berlin.de/">Curry 36 menu</a></li>
+          <li><a href="https://sbahn.berlin/en/tickets/all-tickets/single-tickets/day-ticket/">S-Bahn Berlin: 24h ticket</a></li>
+          <li><a href="https://www.berlin.de/en/tourism/travel-information/1740536-2862820-shopping-hours-sunday-shopping.en.html">Berlin.de: Sunday shopping</a></li>
+          <li><a href="https://commons.wikimedia.org/">Photos: Wikimedia Commons</a></li>
+        </ul>
+      </details>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
